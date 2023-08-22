@@ -1,0 +1,20 @@
+{
+  "name": "snap-globe",
+  "version": "1.0.0",
+  "description": "Its a social media app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Neha Annreddy",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.10.0"
+  }
+}
